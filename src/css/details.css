@@ -1,0 +1,653 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    li {
+        list-style-type: none;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    #header {
+        font-size: 12px;
+        width: 100%;
+        height: 31px;
+        /* line-height: 31px; */
+        background: #f7f7f7;
+        border-bottom: 1px solid #ccc;
+        color: #808080
+    }
+    
+    .wrapper {
+        font-size: 12px;
+        height: 31px;
+        line-height: 31px;
+        width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .wrapper span {
+        display: inline-block;
+    }
+    
+    .wrapper ul {
+        display: inline-block;
+    }
+    
+    .wrapper ul li {
+        position: relative;
+        display: inline-block;
+        /* border: 1px solid transparent; */
+        /* height: 31px; */
+    }
+    
+    .wrapper a {
+        /* text-align: center; */
+        color: #808080
+    }
+    
+    .wrapper ul li:nth-child(3) a {
+        padding-left: 24px;
+        background: url(../img/notice.png) no-repeat left -1px;
+    }
+    
+    .wechat {
+        position: absolute;
+        left: 3px;
+        top: -15px;
+        width: 20px;
+        height: 20px;
+        background: url(../img/w1.jpg) no-repeat left 3px;
+    }
+    
+    .weibo {
+        position: absolute;
+        left: 23px;
+        top: -15px;
+        width: 20px;
+        height: 25px;
+        background: url(../img/w2.jpg) no-repeat left 3px;
+    }
+    
+    .wechat img {
+        border: #808080 1px solid;
+        border-bottom: none;
+        position: absolute;
+        top: 27px;
+        left: -128px;
+        display: none;
+    }
+    
+    .wrapper .wechat:hover img {
+        display: block;
+    }
+    
+    .wrapper input {
+        width: 291px;
+        height: 25px;
+    }
+    
+    #search {
+        background: #fff;
+        margin-top: 20px;
+        margin-bottom: 25px;
+    }
+    
+    .search-1 {
+        width: 49px;
+        height: 29px;
+        background: url(../img/vanclsprite.png) no-repeat -99px 0;
+    }
+    
+    .search-2 {
+        margin-left: 24px;
+        text-align: center;
+        font: 12px/29px "宋体";
+        color: #fff!important;
+        width: 105px;
+        height: 27px;
+        border: 1px solid #c1383e;
+        background: url(../img/vanclsprite.png) no-repeat -153px 0;
+    }
+    
+    #search dl {
+        margin-right: 10px;
+    }
+    
+    #search dt,
+    #search dd {
+        display: inline-block;
+        font-family: "宋体";
+        margin: 0 5px 0;
+    }
+    
+    .search-2 span {
+        color: #333;
+        text-align: left;
+        display: inline-block;
+        border: 1px solid #c1383e;
+        background: #fff;
+        width: 230px;
+        height: 23px;
+        position: relative;
+        left: -125px;
+        top: -1px;
+        display: none;
+    }
+    
+    .search-2:hover {
+        background-position: -153px -29px;
+        color: #c1383e!important;
+        border-bottom: 0;
+    }
+    
+    .search-2:hover span {
+        display: block;
+    }
+    
+    #vue {
+        height: 46px;
+    }
+    
+    .vue-1 {
+        width: 1000px;
+        height: 46px;
+        margin: 0 auto;
+        padding-left: 200px;
+        position: relative;
+    }
+    
+    #logo {
+        position: absolute;
+        top: -24px;
+        left: 0;
+    }
+    
+    .vue-right {
+        /* display: inline-block; */
+    }
+    
+    .vue-right>ul>li {
+        float: left;
+        width: 99px;
+        text-align: center;
+        position: relative;
+    }
+    
+    .vue-right>ul>li>a {
+        display: inline-block;
+        width: 100%;
+        color: #727171;
+        font-size: 16px;
+    }
+    
+    .vue-right>ul>li>span {
+        display: inline-block;
+        position: absolute;
+        right: -2px;
+        top: 1px;
+    }
+    
+    .vue-right>ul>li>b {
+        position: absolute;
+        top: -8px;
+        right: 6px;
+    }
+    
+    .twovue {
+        /* display: none; */
+        height: 0;
+        overflow: hidden;
+        transition: all 0.5s;
+        position: absolute;
+        z-index: 100;
+    }
+    
+    .twovue>span {
+        display: block;
+        width: 100%;
+        height: 5px;
+        border-top: 5px solid #B81C22;
+    }
+    
+    .twovue>li {
+        text-align: center;
+        width: 99px;
+        line-height: 35px;
+        background: #fff;
+        padding: 0px;
+        float: none;
+        font-size: 16px;
+    }
+    
+    .twovue>li>a {
+        color: #727171;
+    }
+    
+    .vue-right li:hover .twovue {
+        display: block;
+        height: 250px;
+    }
+    
+    .breakNav {
+        color: #000;
+        Height: 22px;
+        font-size: 12px;
+        width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .breakNav a {
+        color: #000;
+    }
+    
+    .product {
+        width: 1200px;
+        margin: 0 auto;
+        overflow: hidden;
+        border-bottom: 1px solid #e5e6e6;
+    }
+    
+    .product h2 {
+        margin-left: 10px;
+        float: left;
+        margin-right: 10px;
+        line-height: 45px;
+        font-size: 18px;
+        font-weight: bold;
+        font-family: "Microsoft YaHei";
+    }
+    
+    .product h2 span {
+        margin-left: 10px;
+        font-size: 14px;
+        font-weight: bold;
+        color: #a10000;
+    }
+    
+    .ProductSubnav {
+        height: 45px;
+        float: right;
+    }
+    
+    .ProductSubnav li {
+        float: left;
+        height: 45px;
+        margin: 0 10px 0 0;
+    }
+    
+    .ProductSubnav li a {
+        display: inline-block;
+        padding: 0px 15px 0px 0px;
+        height: 45px;
+        line-height: 45px;
+        font-size: 14px;
+        color: #808080;
+    }
+    
+    .productDetails {
+        width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .blank10 {
+        display: block;
+        width: 100%;
+        height: 30px;
+        line-height: 0px;
+        font-size: 0px;
+        clear: both;
+        overflow: hidden;
+    }
+    
+    .danpin_colLef {
+        width: 634px;
+        height: auto;
+        float: left;
+    }
+    
+    .danpinLeft {
+        width: 72px;
+        float: left;
+        height: auto;
+        margin-top: -23px;
+        position: relative;
+    }
+    
+    #imageMenu {
+        height: 415px;
+        overflow: hidden;
+    }
+    
+    .track {
+        margin-top: 11px;
+        border: 1px solid #B4B4B4;
+        width: 70px;
+        height: 70px;
+        overflow: hidden;
+    }
+    
+    .track1 {
+        display: inline-block;
+        width: 68px;
+        height: 68px;
+        border: 1px solid #fff;
+    }
+    
+    .track2 {
+        display: inline-block;
+        width: 68px;
+        height: 68px;
+        border: 1px solid #fff;
+    }
+    
+    .danpinColCenter {
+        width: 402px;
+        float: right;
+        margin: 0 80px;
+    }
+    
+    .bigImg {
+        width: 400px;
+        height: 400px;
+        margin-top: 7px;
+        overflow: hidden;
+        border: 1px solid #e5e6e6;
+    }
+    
+    .price {
+        font-size: 12px;
+        color: #a10000;
+    }
+    
+    .price strong {
+        font-size: 24px;
+    }
+    
+    .price a {
+        color: #a10000;
+    }
+    
+    .danpinColor_Select {
+        overflow: hidden;
+        font-size: 12px;
+        font-family: "宋体";
+        color: #333;
+        margin-top: 20px;
+    }
+    
+    .danpinColorTitle {
+        line-height: 18px;
+        float: left;
+        color: #666666;
+        padding-bottom: 10px;
+        font-size: 12px;
+    }
+    
+    .selColor {
+        width: 525px;
+        float: left;
+        padding: 0px;
+    }
+    
+    .selColor li {
+        cursor: pointer;
+        border: 1px solid #B4B4B4;
+        display: inline;
+        float: left;
+        height: 40px;
+        margin: 0px 8px 8px 0px;
+        width: 95px;
+        position: relative;
+    }
+    
+    #onlickColor {
+        border: 1px solid #a10000;
+    }
+    
+    #onlickColor .colorHoverok {
+        display: block;
+        width: 14px;
+        height: 13px;
+        background: url(../img/sprite0725.png) no-repeat scroll;
+        background-position: -1151px 0;
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+    }
+    
+    .colorBlock {
+        background: none repeat scroll 0 0 #FFFFFF;
+        height: 38px;
+        margin: 1px auto 0;
+        width: 93px;
+    }
+    
+    .SpriteColors {
+        display: block;
+        float: left;
+        width: 36px;
+        height: 36px;
+        margin: 1px 0px 0px 1px;
+        overflow: hidden;
+        cursor: pointer;
+    }
+    
+    .colorBlock p {
+        color: #666;
+        float: left;
+        line-height: 16px;
+        margin-left: 6px;
+        padding-top: 4px;
+        width: 46px;
+        overflow: hidden;
+        height: 34px;
+        cursor: pointer;
+    }
+    
+    .selSizeArea {
+        overflow: hidden;
+        margin-bottom: 15px;
+        margin-top: 12px;
+    }
+    
+    .danpinColorTitle {
+        float: left;
+        color: #666666;
+        line-height: 22px;
+        padding-bottom: 10px;
+    }
+    
+    .selSize {
+        width: 335px;
+        float: left;
+    }
+    
+    .selSize li {
+        background: #FFFFFF;
+        border: 1px solid #C8C8C8;
+        color: #333333;
+        cursor: pointer;
+        padding: 0px;
+        display: inline;
+        float: left;
+        height: 24px;
+        line-height: 22px;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        text-align: center;
+        position: relative;
+    }
+    
+    .selSize li p {
+        display: block;
+        float: left;
+        height: 22px;
+        margin: 1px 1px 0px 1px;
+        background: #fff;
+        padding: 0 9px;
+        width: auto;
+    }
+    
+    #onlickSelSize {
+        background: #a10000;
+        border: 1px solid #a10000;
+    }
+    
+    #onlickSelSize span {
+        width: 14px;
+        height: 13px;
+        background: url(../img/sprite0725.png) no-repeat scroll;
+        background-position: -1151px 0;
+        position: absolute;
+        bottom: 1px;
+        right: 1px;
+    }
+    
+    .goodsNum {
+        overflow: hidden;
+        padding: 0px;
+    }
+    
+    .danpinColorTitle {
+        float: left;
+        color: #666666;
+        padding-bottom: 10px;
+    }
+    
+    .danpinnumSelect {
+        float: left;
+        overflow: hidden;
+    }
+    
+    #selectedAmount {
+        overflow: hidden;
+        height: 20px;
+        line-height: 20px;
+        width: 53px;
+        float: left;
+    }
+    
+    .blank20 {
+        display: block;
+        width: 100%;
+        height: 0px;
+        line-height: 0px;
+        font-size: 0px;
+        clear: both;
+        overflow: hidden;
+    }
+    
+    .shoppingNews {
+        float: left;
+        margin-top: 50px;
+    }
+    
+    .btnnowbuy {
+        background: #F7ABAF;
+        width: 166px;
+        height: 31px;
+        display: block;
+        float: left;
+        margin-right: 13px;
+        border: solid 1px rgb(183, 27, 33);
+    }
+    
+    .btnnowbuy span {
+        margin-left: 60px;
+        margin-top: 6px;
+        display: block;
+        font-size: 14px;
+        color: #A50309;
+    }
+    
+    #addToShoppingCar {
+        background: url(../img/vanclsprite.png) no-repeat scroll -147px -285px;
+        width: 168px;
+        height: 33px;
+        display: block;
+        float: left;
+    }
+    
+    .blank30 {
+        display: block;
+        width: 100%;
+        height: 0px;
+        line-height: 0px;
+        font-size: 0px;
+        clear: both;
+        overflow: hidden;
+    }
+    
+    .foot {
+        width: 100%;
+        height: auto;
+        margin: 0px auto;
+        border-top: 1px solid #727171;
+        margin-top: 30px;
+    }
+    
+    .foot p {
+        font-size: 12px;
+        text-align: center;
+        line-height: 25px;
+        color: #3e3a39;
+        font-family: "Microsoft YaHei";
+    }
+    
+    .blank {
+        display: block;
+        width: 100%;
+        height: 20px;
+        line-height: 0px;
+        font-size: 0px;
+        clear: both;
+        overflow: hidden;
+    }
+    /* 尾部 */
+    
+    .subFooter {
+        width: 980px;
+        margin: 0px auto 25px;
+        text-align: center;
+    }
+    
+    .redLogo {
+        background: url(../img/spritesbgtop.png) no-repeat scroll 0 -581px transparent;
+        display: inline-block;
+        height: 42px;
+        width: 113px;
+    }
+    
+    .costumeOrg {
+        background: url(../img/spritesbgtop.png) no-repeat scroll 0 -629px transparent;
+        display: inline-block;
+        height: 45px;
+        width: 156px;
+    }
+    
+    .wsjyBzzx {
+        background: url(../img/spritesbgtop.png) no-repeat scroll 0 -675px transparent;
+        display: inline-block;
+        height: 42px;
+        width: 96px;
+    }
+    
+    .vanclMsg {
+        background: url(../img/spritesbgtop.png) no-repeat scroll -97px -675px transparent;
+        display: inline-block;
+        height: 42px;
+        width: 101px;
+    }
+    
+    .vanclqingNian {
+        background: url(../img/spritesbgtop.png) no-repeat scroll -202px -675px transparent;
+        display: inline-block;
+        height: 42px;
+        width: 42px;
+    }
